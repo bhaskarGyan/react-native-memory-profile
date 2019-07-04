@@ -24,29 +24,13 @@ class MemoryHungryArray extends Component {
   render() {
     const { record } = this.state;
     const last = record[record.length - 1];
-    var abc;
-    debugger;
-    abc = last[last.length - 1];
+
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>{JSON.stringify(this.state.record.length)}</Text>
-        <Button title="Add Record Dude" onPress={() => this.addRecord()} />
-        <Button
-          title="Go back to Screen 1"
-          onPress={() =>
-            this.props.navigation.navigate('ScreenOne', { key: null })
-          }
-        />
+        <Text>Record length : {JSON.stringify(this.state.record.length)}</Text>
+        <Button title="Add Record" onPress={() => this.addRecord()} />
+
         <Button title="Remove" onPress={() => this.setState({ record: [] })} />
-        <Button
-          title="Pop to top"
-          onPress={() => this.props.navigation.navigate('HomeCart')}
-        />
-        <ScrollView>
-          <View>
-            <Text>{abc}</Text>
-          </View>
-        </ScrollView>
       </View>
     );
   }
