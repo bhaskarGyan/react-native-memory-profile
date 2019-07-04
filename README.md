@@ -6,3 +6,5 @@
 4. react-native run-android (for devlopment)
 5. cd android && ./gradlew assembleRelease for release apk 
 
+## To test apk without setup
+Download APK from respective branch under ${PROJECT_ROOT}/releaseAPK
