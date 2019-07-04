@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start-server": "node ./server/index.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
