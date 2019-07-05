@@ -10,6 +10,7 @@ import {
 import ScreenOne from './ScreenOne';
 import Waveforms from './Waveforms';
 import MemoryHungryArray from './MemHungryArray';
+import CrashTest from './CrashTest';
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -24,6 +25,12 @@ class HomeScreen extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
+        <Button
+          title="Crash Test"
+          onPress={() => {
+            this.props.navigation.navigate('CrashTest', { key: null });
+          }}
+        />
         <Button
           title="Go to Flat List"
           onPress={() => {
@@ -66,6 +73,7 @@ const navigatorStack = createStackNavigator(
     ScreenOne: withNavigationFocus(ScreenOne),
     Waveforms: withNavigationFocus(Waveforms),
     MemoryHungryArray: withNavigationFocus(MemoryHungryArray),
+    CrashTest: withNavigationFocus(CrashTest),
   },
   {
     initialRouteName: 'HomeCart',
