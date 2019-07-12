@@ -10,10 +10,4 @@
 Download APK from respective branch under ${PROJECT_ROOT}/releaseAPK
 
 #Observations
-
-
-![Stock JSC](https://pbs.twimg.com/media/D-muVBNUEAAtzHz.jpg:large)
-
-![New JSC (v245459.0.0)](https://pbs.twimg.com/media/D-muXdaUcAAQqWf.jpg:large)
-
-![React-Native-V8](https://pbs.twimg.com/media/D-muZfJUIAAhuxz.jpg:large)
+![JSCvsV8](./MemoryProfilingResult/JSCvsV8.png)
