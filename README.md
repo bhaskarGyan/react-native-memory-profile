@@ -1,4 +1,4 @@
-# react-native-memory-profile
+# react-native-memory-profile (JSC vs V8)
 
 1. Checkout brach for which you want to do memory profiling 
 2. npm i
@@ -8,3 +8,12 @@
 
 ## To test apk without setup
 Download APK from respective branch under ${PROJECT_ROOT}/releaseAPK
+
+#Observations
+
+
+![Stock JSC](https://pbs.twimg.com/media/D-muVBNUEAAtzHz.jpg:large)
+
+![New JSC (v245459.0.0)](https://pbs.twimg.com/media/D-muXdaUcAAQqWf.jpg:large)
+
+![React-Native-V8](https://pbs.twimg.com/media/D-muZfJUIAAhuxz.jpg:large)
