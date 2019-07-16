@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, Button,StyleSheet } from 'react-native';
 import {
   createStackNavigator,
   withNavigationFocus,
@@ -23,6 +23,11 @@ class HomeScreen extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        {global.HermesInternal == null ? null : (
+            <View style={styles.engine}>
+              <Text style={styles.footer}>Engine: Hermes</Text>
+            </View>
+          )}
         <Text>Home Screen</Text>
         <Button
           title="Go to Flat List"
@@ -71,6 +76,21 @@ const navigatorStack = createStackNavigator(
     initialRouteName: 'HomeCart',
   },
 );
+const styles = StyleSheet.create({
+ 
+  engine: {
+    position: 'absolute',
+    right: 0,
+  },
+  footer: {
+    color: "#000000",
+    fontSize: 12,
+    fontWeight: '600',
+    padding: 4,
+    paddingRight: 12,
+    textAlign: 'right',
+  },
+});
 
 const App = createAppContainer(navigatorStack);
 export default App;
