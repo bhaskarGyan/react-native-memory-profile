@@ -9,5 +9,6 @@
 ## To test apk without setup
 Download APK from respective branch under ${PROJECT_ROOT}/releaseAPK
 
+
 #Observations
-![JSCvsV8](./MemoryProfilingResult/JSCvsV8.png)
+![JSCvsV8vsHermes](./MemoryProfilingResult/JSCvsV8vsHermes.png)
