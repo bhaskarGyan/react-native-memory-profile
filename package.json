@@ -10,7 +10,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "patch-package": "^6.1.2",
     "postinstall": "^0.4.2",
